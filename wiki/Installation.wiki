@@ -1,0 +1,28 @@
+#summary Installation instructions.
+#labels Phase-Deploy,Featured
+
+= Installation Instructions =
+
+Facile-proxy-manager uses python's [http://docs.python.org/distutils/index.html distutils] for package creation or direct installation.
+
+== Creating an RPM ==
+
+To build a RPM package for a Linux system:
+
+  * Download the latest [http://code.google.com/p/facile-proxy-manager/downloads/list release] of facile-proxy-manager, or checkout the latest version from the [http://code.google.com/p/facile-proxy-manager/source/checkout subversion] repository.
+
+  * Run the following command:
+
+{{{
+python setup.py bdist_rpm
+}}}
+
+  * When the build command completes, there will be a RPM in the `dist` subdirectory.
+
+== Other formats ==
+
+The [http://docs.python.org/distutils/builtdist.html distutils] documentation has more examples for building packages for other platforms.
+
+== Initial Configuration ==
+
+See the [http://code.google.com/p/facile-proxy-manager/source/browse/trunk/README.txt README.txt] file for documentation on how to setup facile-proxy-manager for your proxy servers.
